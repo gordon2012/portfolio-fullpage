@@ -1,9 +1,17 @@
-/*RESET*/
+/* RESET */
 html, body, section, slide, inner, container-fluid, #fullpage
 {
   height: 100%;
 }
 
+
+/* Custom bootstrap */
+.btn-custom {
+  @include button-variant(white, #555, #555);
+}
+
+
+/* Basic */
 ul
 {
   margin: 0;
@@ -14,8 +22,6 @@ li
 {
   display: inline;
 }
-
-
 
 #menu
 {
@@ -31,7 +37,7 @@ li
 }
 #menu a
 {
-  color: white;
+  // color: white;
 }
 
 .floating
@@ -43,7 +49,6 @@ li
   width: 50%;
 
 }
-
 
 .inner
 {
@@ -61,14 +66,11 @@ li
   width: 80%;
 
   margin: auto;
-
-
 }
 .port-in
 {
 
 }
-
 
 .section
 {
@@ -93,7 +95,7 @@ li
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/303256/snow-21979_1920.jpg);
 }
 
-li.active
+li.active>a
 {
-  text-transform: uppercase;
+  @include button-variant(black, #fff, #000);
 }

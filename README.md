@@ -10,7 +10,6 @@ Technologies:
 
 TODO:
 - separate menu from brand
-- make menu responsive
 - partition content in about page
 - add projects to portfolio page
 - fix buttons on contact page
@@ -20,3 +19,4 @@ DONE:
 - complete transfer from CodePen
 - improve styling of menu
 - maximize space for content
+- make menu responsive

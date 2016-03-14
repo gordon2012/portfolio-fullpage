@@ -22,7 +22,7 @@ li
   display: inline;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   text-align: center;
 }
 
@@ -131,22 +131,33 @@ li.pull-right {
 }
 
 /* flexbox enabled about page */
-.text-box {
+.flexbox-container {
   display: flex;
   flex-direction: row;
-  div {
-    margin: 8px;
-    padding: 8px;
-    border: 4px solid rgba(0,0,0,0.25);
-    border-radius: 8px;
-    background: rgba(0,0,0,0.5);
+  // border: 1px solid red;
 
-    &.big {
-      flex: 4;
-    }
-    &.small {
-      flex: 1;
-    }
 
+  .flexbox-big {
+    flex: 4;
+    // border: 1px solid yellow;
   }
+  &.flexbox-small {
+    flex: 1;
+  }
+
+
+  td {
+    // border-bottom: 2px solid black;
+    // border-radius: 8px;
+    // padding: 4px 8px;
+  }
+
+}
+
+.tbox {
+  margin: 8px;
+  padding: 8px;
+  border: 4px solid rgba(0,0,0,0.25);
+  border-radius: 8px;
+  background: rgba(0,0,0,0.5);
 }

@@ -11,6 +11,7 @@ Technologies:
 TODO:
 - add projects to portfolio page
 - fix buttons on contact page
+- embed github commit heatmap
 
 DONE:
 - transfer from CodePen
@@ -21,3 +22,4 @@ DONE:
 - separate menu from brand
 - fix menu responsiveness
 - begin to partition content in about page
+- complete content partitioning in about page

@@ -20,3 +20,4 @@ DONE:
 - improve styling of menu
 - maximize space for content
 - make menu responsive
+- fix menu responsiveness

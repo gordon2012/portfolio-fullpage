@@ -9,8 +9,6 @@ Technologies:
 - fullPage.js: https://github.com/alvarotrigo/fullPage.js
 
 TODO:
-- separate menu from brand
-- partition content in about page
 - add projects to portfolio page
 - fix buttons on contact page
 
@@ -20,4 +18,6 @@ DONE:
 - improve styling of menu
 - maximize space for content
 - make menu responsive
+- separate menu from brand
 - fix menu responsiveness
+- begin to partition content in about page

@@ -25,13 +25,6 @@ li
 h1, h2, h3 {
   text-align: center;
 }
-p {
-  margin: 8px;
-  padding: 8px;
-  border: 4px solid rgba(0,0,0,0.25);
-  border-radius: 8px;
-  background: rgba(0,0,0,0.5);
-}
 
 
 #menu
@@ -135,4 +128,25 @@ li.active>a
 /* floating nav */
 li.pull-right {
   margin-left: 8px;
+}
+
+/* flexbox enabled about page */
+.text-box {
+  display: flex;
+  flex-direction: row;
+  div {
+    margin: 8px;
+    padding: 8px;
+    border: 4px solid rgba(0,0,0,0.25);
+    border-radius: 8px;
+    background: rgba(0,0,0,0.5);
+
+    &.big {
+      flex: 4;
+    }
+    &.small {
+      flex: 1;
+    }
+
+  }
 }

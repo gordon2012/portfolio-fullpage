@@ -12,6 +12,7 @@ TODO:
 - add projects to portfolio page
 - fix buttons on contact page
 - embed github commit heatmap
+- line up headers with each other
 
 DONE:
 - transfer from CodePen
@@ -23,3 +24,4 @@ DONE:
 - fix menu responsiveness
 - begin to partition content in about page
 - complete content partitioning in about page
+- create foundation of portfolio page

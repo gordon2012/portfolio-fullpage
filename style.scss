@@ -1,3 +1,7 @@
+$debug: false;
+// $debug: true;
+
+
 /* RESET */
 html, body, section, slide, inner, container-fluid, #fullpage
 {
@@ -54,7 +58,12 @@ h1, h2, h3, h4 {
   padding-bottom: 0px;
 
   .deeper {
-    // border: 1px solid yellow;
+
+    @if $debug {
+
+
+      border: 1px solid yellow;
+    }
     height: calc(100% - 50px);
     // padding-bottom: 0px;
     // margin-bottom: 200px;
@@ -151,7 +160,9 @@ li.pull-right {
   // background-color: green;
   width: 50%;
 
-  // border: 1px solid red;
+  @if $debug {
+    border: 1px solid red;
+  }
 
 }
 
@@ -160,8 +171,11 @@ li.pull-right {
 }
 
 .portfolio-page {
-  // background-color: blue;
-  // border: 1px solid blue;
+
+  @if $debug {
+    // background-color: blue;
+    border: 1px solid blue;
+  }
   min-height: 100%;
   width: 100%;
   // margin: 70px 0px 50px 0px;
@@ -176,22 +190,47 @@ li.pull-right {
     justify-content: center;
     flex-direction: column;
     >div {
+
+      >span {
+        background: rgba(0,0,0,0.75);
+        padding: 4px 8px;
+      }
+
       display: flex;
       justify-content: center;
       flex-direction: row;
+
+      >img {
+        // max-width: 100%;
+        // max-height: 100%;
+        // margin: auto;
+        // display: block;
+        // height: auto;
+      }
+
     }
   }
+}
+@media all and (min-width: 1000px) {
+  .portfolio-page>div { flex-basis: calc(33% - 40px); }
 }
 
 .pf-box {
   margin: 20px;
   // border: 1px solid green;
   background: rgba(0,0,0,0.75);
+
+  background-size: cover;
+  background-position: center center;
 }
 
 
 
-.port-in
+.pf-wikipedia
 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/303256/wikipedia.png);
+}
 
+.pf-random {
+  background-image: url(http://lorempixel.com/400/200/);
 }

@@ -25,3 +25,4 @@ DONE:
 - begin to partition content in about page
 - complete content partitioning in about page
 - create foundation of portfolio page
+- fix flexbox and images in portfolio page

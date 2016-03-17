@@ -156,9 +156,9 @@ li.pull-right {
 {
   position: fixed;
   color: white;
-  margin: 50px 25% 25% 25%;
+  margin: 50px 25% 25% 0%;
   // background-color: green;
-  width: 50%;
+  width: 100%;
 
   @if $debug {
     border: 1px solid red;
@@ -186,7 +186,7 @@ li.pull-right {
 
   >div {
     display: flex;
-    flex-basis: calc(50% - 40px);
+    flex-basis: calc(100% - 40px);
     justify-content: center;
     flex-direction: column;
     >div {
@@ -211,9 +211,15 @@ li.pull-right {
     }
   }
 }
+
+@media all and (min-width: 600px) {
+  .portfolio-page>div { flex-basis: calc(50% - 40px); }
+}
+
 @media all and (min-width: 1000px) {
   .portfolio-page>div { flex-basis: calc(33% - 40px); }
 }
+
 
 .pf-box {
   margin: 20px;

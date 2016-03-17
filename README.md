@@ -26,3 +26,4 @@ DONE:
 - complete content partitioning in about page
 - create foundation of portfolio page
 - fix flexbox and images in portfolio page
+- add started and placeholder projects to portfolio page

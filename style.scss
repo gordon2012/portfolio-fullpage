@@ -1,5 +1,5 @@
 $debug: false;
-// $debug: true;
+$debug: true;
 
 
 /* RESET */
@@ -240,3 +240,30 @@ li.pull-right {
 .pf-random {
   background-image: url(http://lorempixel.com/400/200/);
 }
+
+
+/* [=== Contact Page ===] */
+
+
+
+/* Social Buttons */
+
+.dinotalk:before{content:"\f099"}
+.chainedin:before{content:"\f0e1"}
+.visagelivre:before{content:"\f09a"}
+
+.fa-spin-hover {
+  animation: spin 2s infinite linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* EOF */

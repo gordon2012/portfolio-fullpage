@@ -9,8 +9,6 @@ Technologies:
 - fullPage.js: https://github.com/alvarotrigo/fullPage.js
 
 TODO:
-- add projects to portfolio page
-- fix buttons on contact page
 - embed github commit heatmap
 - line up headers with each other
 
@@ -27,3 +25,4 @@ DONE:
 - create foundation of portfolio page
 - fix flexbox and images in portfolio page
 - add started and placeholder projects to portfolio page
+- fix buttons on contact page

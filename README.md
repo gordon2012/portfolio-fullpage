@@ -26,3 +26,4 @@ DONE:
 - fix flexbox and images in portfolio page
 - add started and placeholder projects to portfolio page
 - fix buttons on contact page
+- add partition for email on contact page

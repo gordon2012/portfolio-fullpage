@@ -266,6 +266,9 @@ li.pull-right {
 .db-b {
   border: 1px solid blue;
 }
+.db-y {
+  border: 1px solid yellow;
+}
 
 
 /* contact flex */
@@ -287,9 +290,13 @@ li.pull-right {
   flex: 1 1 auto;
 }
 
+.m-4 {
+  margin: 4px;
+}
 
-
-
+.db-bg {
+  background: rgba(0,0,0,0.5);
+}
 
 
 

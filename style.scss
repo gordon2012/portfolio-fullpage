@@ -1,5 +1,5 @@
 $debug: false;
-$debug: true;
+// $debug: true;
 
 
 /* RESET */
@@ -242,12 +242,11 @@ li.pull-right {
 }
 
 
+
 /* [=== Contact Page ===] */
 
 
-
 /* Social Buttons */
-
 .dinotalk:before{content:"\f099"}
 .chainedin:before{content:"\f0e1"}
 .visagelivre:before{content:"\f09a"}
@@ -256,20 +255,25 @@ li.pull-right {
   animation: spin 2s infinite linear;
 }
 
-/* debug borders */
-.db-r {
-  border: 1px solid red;
-}
-.db-g {
-  border: 1px solid green;
-}
-.db-b {
-  border: 1px solid blue;
-}
-.db-y {
-  border: 1px solid yellow;
-}
 
+/* debug borders */
+@if $debug {
+  .db-r {
+    border: 1px solid red;
+  }
+  .db-g {
+    border: 1px solid green;
+  }
+  .db-b {
+    border: 1px solid blue;
+  }
+  .db-y {
+    border: 1px solid yellow;
+  }
+  .db-bg {
+    background: rgba(0,0,0,0.5);
+  }
+}
 
 /* contact flex */
 .fc-row {
@@ -294,10 +298,16 @@ li.pull-right {
   margin: 4px;
 }
 
-.db-bg {
-  background: rgba(0,0,0,0.5);
+.fi-1-0 {
+  flex: 1 0 auto;
+}
+.fi-0-1 {
+  flex: 0 1 auto;
 }
 
-
+input, textarea {
+  color: black;
+  resize: none;
+}
 
 /* EOF */

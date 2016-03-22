@@ -310,4 +310,35 @@ input, textarea {
   resize: none;
 }
 
+.fi-4th {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 23%;
+}
+
+.fc-wrap {
+  flex-wrap: wrap;
+}
+
+
+.fi-sp10 {
+  flex: 0 1 0%;
+  // border: 1px solid red;
+}
+@media all and (min-width: 600px) {
+  .fi-sp10 {
+  flex: 1 0 1%;
+  // border: 1px solid blue;
+  }
+}
+@media all and (min-width: 1000px) {
+  .fi-sp10 {
+  flex: 1 0 10%;
+  // border: 1px solid yellow;
+  }
+}
+
+
+
+
 /* EOF */

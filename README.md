@@ -11,6 +11,7 @@ Technologies:
 TODO:
 - embed github commit heatmap
 - line up headers with each other
+- refactor CSS
 
 DONE:
 - transfer from CodePen
@@ -29,3 +30,4 @@ DONE:
 - add partition for email on contact page
 - add flexbox for email form on contact page
 - add form elements to contact page
+- change format of flexbox on contact page

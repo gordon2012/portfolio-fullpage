@@ -62,7 +62,7 @@ h1, h2, h3, h4 {
     @if $debug {
 
 
-      border: 1px solid yellow;
+      // outline: 10px solid yellow;
     }
     height: calc(100% - 50px);
     // padding-bottom: 0px;
@@ -161,7 +161,7 @@ li.pull-right {
   width: 100%;
 
   @if $debug {
-    border: 1px solid red;
+    // outline: 1px solid red;
   }
 
 }
@@ -259,16 +259,21 @@ li.pull-right {
 /* debug borders */
 @if $debug {
   .db-r {
-    border: 1px solid red;
+    outline: 1px dotted red;
+    // outline: 4px solid red;
   }
   .db-g {
-    border: 1px solid green;
+    outline: 1px solid green;
   }
   .db-b {
-    border: 1px solid blue;
+    outline: 1px solid blue;
+    // border: 1px solid blue;
+    // background: rgba(0,0,255,0.1)
   }
   .db-y {
-    border: 1px solid yellow;
+    outline: 1px dashed yellow;
+    // outline: 1px solid blue;
+    // background: rgba(0,0,255,0.1)
   }
   .db-bg {
     background: rgba(0,0,0,0.5);
@@ -336,6 +341,19 @@ input, textarea {
   flex: 1 0 10%;
   // border: 1px solid yellow;
   }
+}
+
+
+/* Viewport */
+.viewport {
+  margin: 101px 1px 0px 1px;
+  height: calc(100% - 52px);
+}
+
+/* Headings */
+.heading {
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 

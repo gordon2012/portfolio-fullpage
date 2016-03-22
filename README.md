@@ -10,8 +10,8 @@ Technologies:
 
 TODO:
 - embed github commit heatmap
-- line up headers with each other
 - refactor CSS
+- fix hardcoding of email form height
 
 DONE:
 - transfer from CodePen
@@ -31,3 +31,4 @@ DONE:
 - add flexbox for email form on contact page
 - add form elements to contact page
 - change format of flexbox on contact page
+- line up headers with each other

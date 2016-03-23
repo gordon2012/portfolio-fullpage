@@ -1,5 +1,5 @@
 $debug: false;
-// $debug: true;
+$debug: true;
 
 
 /* RESET */
@@ -174,7 +174,7 @@ li.pull-right {
 
   @if $debug {
     // background-color: blue;
-    border: 1px solid blue;
+    // border: 1px solid blue;
   }
   min-height: 100%;
   width: 100%;
@@ -258,6 +258,27 @@ li.pull-right {
 
 /* debug borders */
 @if $debug {
+
+  .db {
+    // outline: 4px solid rgba(255,0,0,0.5);
+    outline: 4px solid rgba(255,255,255,0.5);
+    outline-offset: -4px;
+  }
+    .db.r {
+      outline-color:rgba(255,0,0,0.5);
+    }
+    .db.g {
+      outline-color:rgba(0,255,0,0.5);
+    }
+    .db.b {
+      outline-color:rgba(0,0,255,0.5);
+    }
+    .db.y {
+      outline-color:rgba(255,255,0,0.5);
+    }
+
+
+
   .db-r {
     outline: 1px dotted red;
     // outline: 4px solid red;
@@ -346,8 +367,8 @@ input, textarea {
 
 /* Viewport */
 .viewport {
-  margin: 101px 1px 0px 1px;
-  height: calc(100% - 52px);
+  // margin: 9px 1px 0px 1px;
+  height: calc(100% - 50px);
 }
 
 /* Headings */

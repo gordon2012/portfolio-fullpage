@@ -32,3 +32,4 @@ DONE:
 - add form elements to contact page
 - change format of flexbox on contact page
 - line up headers with each other
+- change debug borders into outlines

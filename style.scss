@@ -28,6 +28,12 @@ $debug: false;
 // == Common ==
 //
 
+// Reset
+h1 {
+  margin: 0;
+}
+
+
 // Headers
 h1, h2, h3, h4 {
   text-align: center;
@@ -130,11 +136,11 @@ li.pull-right {
 .fi-0-1 {
   flex: 0 1 auto;
 }
-.fi-4th {
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: 23%;
-}
+// .fi-4th {
+//   flex-grow: 0;
+//   flex-shrink: 1;
+//   flex-basis: 23%;
+// }
 .fi-sp10 {
   flex: 0 1 0%;
 }
@@ -244,6 +250,54 @@ input, textarea {
     flex: 1 0 10%;
   }
 }
+
+.contact-container {
+  height: calc(100% - 79px)
+  // height: 100%;
+}
+
+h1 {
+  padding: 0;
+}
+.con-fi {
+  flex: 0 0 auto;
+}
+.con-fi-content {
+  flex: 1 1 auto;
+  justify-content: center;
+}
+.cfi-center {
+  flex: 0 1 80%;
+}
+.cfc-btns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.fi-4th {
+  // flex-grow: 1;
+  // flex-shrink: 1;
+  // flex-basis: 20%;
+  flex: 0 1 auto;
+  // margin: 4px;
+  padding: 4px;
+  span {
+    // margin: 4px;
+  }
+}
+.ex {
+  min-width: 100%;
+  height: 100%;
+}
+.contact-form {
+  background: rgba(0,0,0,0.5);
+  padding: 16px;
+}
+.con-footer {
+  background: #333;
+  justify-content: center;
+}
+
 
 
 

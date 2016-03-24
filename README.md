@@ -10,7 +10,6 @@ Technologies:
 
 TODO:
 - embed github commit heatmap
-- fix hardcoding of email form height
 - change about page to use reusable flexbox classes
 - change portfolio page to use reusable flexbox classes
 
@@ -35,3 +34,4 @@ DONE:
 - line up headers with each other
 - change debug borders into outlines
 - refactor CSS
+- redo contact page

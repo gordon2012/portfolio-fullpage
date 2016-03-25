@@ -12,6 +12,7 @@ TODO:
 - embed github commit heatmap
 - change about page to use reusable flexbox classes
 - change portfolio page to use reusable flexbox classes
+- make scrolling text boxes for about page
 
 DONE:
 - transfer from CodePen
@@ -36,3 +37,4 @@ DONE:
 - refactor CSS
 - redo contact page
 - fix headers, again
+- redo about page

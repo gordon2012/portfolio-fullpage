@@ -35,3 +35,4 @@ DONE:
 - change debug borders into outlines
 - refactor CSS
 - redo contact page
+- fix headers, again

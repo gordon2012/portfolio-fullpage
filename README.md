@@ -38,3 +38,4 @@ DONE:
 - redo contact page
 - fix headers, again
 - redo about page
+- fix alignment of photo header on about page

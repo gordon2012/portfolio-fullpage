@@ -39,3 +39,4 @@ DONE:
 - fix headers, again
 - redo about page
 - fix alignment of photo header on about page
+- begin resizing skills boxes on about page

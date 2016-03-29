@@ -13,7 +13,6 @@ TODO:
 - change about page to use reusable flexbox classes
 - change portfolio page to use reusable flexbox classes
 - make scrolling text boxes for about page
-- figure out why the skill boxes on about page cannot be resized
 - make email form on contact page functional
 
 DONE:
@@ -43,3 +42,4 @@ DONE:
 - fix alignment of photo header on about page
 - begin resizing skills boxes on about page
 - complete redesign of skill boxes on about page
+- resize skill boxes on about page

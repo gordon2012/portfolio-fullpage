@@ -1,7 +1,7 @@
 // == Debug ==
 //
 $debug: false;
-$debug: true;
+// $debug: true;
 
 // Borders
 @if $debug {
@@ -124,6 +124,9 @@ li.pull-right {
 .fi-4 {
   flex: 4 1 auto;
 }
+.fi-2 {
+  flex: 2 1 auto;
+}
 .fi-1 {
   flex: 1 1 auto;
 }
@@ -199,7 +202,13 @@ li.pull-right {
     margin: 0;
     padding: 0;
     li {
-      display: block; list-style: none;
+      border: 1px solid white;
+      margin: 2px;
+      padding-left: 3px;
+      // display: block;
+      // list-style: none;
+      flex: 1 1 auto;
+      // @extend .db;
     }
   }
 }

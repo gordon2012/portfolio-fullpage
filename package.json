@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "A Basic Front End Web Development project for FreeCodeCamp",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:mdir && npm run build:html && npm run build:styles && npm run build:scripts",
+    "build:mdir": "mkdirp dist",
+    "build:html": "cp src/index.html ./dist",
+    "build:styles": "node-sass src/style.scss dist/style.css",
+    "build:scripts": "cp src/script.js ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gordon2012/portfolio.git"
+  },
+  "keywords": [],
+  "author": "Gordon Doskas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gordon2012/portfolio/issues"
+  },
+  "homepage": "https://github.com/gordon2012/portfolio#readme",
+  "devDependencies": {
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.4.2",
+    "nodemon": "^1.9.1"
+  }
+}

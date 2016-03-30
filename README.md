@@ -43,3 +43,4 @@ DONE:
 - begin resizing skills boxes on about page
 - complete redesign of skill boxes on about page
 - resize skill boxes on about page
+- migrate from CodePen and configure npm

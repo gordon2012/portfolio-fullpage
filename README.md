@@ -44,3 +44,5 @@ DONE:
 - complete redesign of skill boxes on about page
 - resize skill boxes on about page
 - migrate from CodePen and configure npm
+- add travis deploy
+- add live reloading

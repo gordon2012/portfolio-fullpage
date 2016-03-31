@@ -8,7 +8,11 @@
     "build:mdir": "mkdirp dist",
     "build:html": "cp src/index.html ./dist",
     "build:styles": "node-sass src/style.scss dist/style.css",
-    "build:scripts": "cp src/script.js ./dist"
+    "build:scripts": "cp src/script.js ./dist",
+    "watch": "watch \"npm run build\" src/",
+    "livereload": "live-reload --port 35729 dist/",
+    "devserver": "node server",
+    "dev": "parallelshell \"npm run livereload\" \"npm run devserver\" \"npm run watch\""
   },
   "repository": {
     "type": "git",
@@ -22,8 +26,13 @@
   },
   "homepage": "https://github.com/gordon2012/portfolio#readme",
   "devDependencies": {
+    "connect-livereload": "^0.5.4",
+    "express": "^4.13.4",
+    "live-reload": "^1.1.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^3.4.2",
-    "nodemon": "^1.9.1"
+    "nodemon": "^1.9.1",
+    "parallelshell": "^2.0.0",
+    "watch": "^0.17.1"
   }
 }

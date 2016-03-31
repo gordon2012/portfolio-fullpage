@@ -14,6 +14,7 @@ TODO:
 - change portfolio page to use reusable flexbox classes
 - make scrolling text boxes for about page
 - make email form on contact page functional
+- add links to github from portfolio projects
 
 DONE:
 - transfer from CodePen
@@ -46,3 +47,4 @@ DONE:
 - migrate from CodePen and configure npm
 - add travis deploy
 - add live reloading
+- begin restructuring portfolio flexbox

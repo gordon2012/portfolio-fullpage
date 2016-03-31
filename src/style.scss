@@ -3,7 +3,7 @@
 // == Debug ==
 //
 $debug: false;
-// $debug: true;
+$debug: true;
 
 // Borders
 @if $debug {
@@ -254,37 +254,100 @@ li.pull-right {
   flex-wrap: wrap;
   flex-direction: row;
 
-  >div {
-    display: flex;
-    flex-basis: calc(100% - 40px);
-    justify-content: center;
-    flex-direction: column;
-    >div {
+  // align-content: space-around;
+  // align-items: center;
 
-      >span {
-        background: rgba(0,0,0,0.75);
-        padding: 4px 8px;
-      }
-
-      display: flex;
-      justify-content: center;
-      flex-direction: row;
-    }
-  }
-}
-
-@media all and (min-width: 600px) {
-  .portfolio-page>div { flex-basis: calc(50% - 40px); }
-}
-
-@media all and (min-width: 1000px) {
-  .portfolio-page>div { flex-basis: calc(33% - 40px); }
+  // >div {
+  //   display: flex;
+  //   flex-basis: calc(100% - 40px);
+  //   justify-content: center;
+  //   flex-direction: column;
+  //   >div {
+  //
+  //     >span {
+  //       background: rgba(0,0,0,0.75);
+  //       padding: 4px 8px;
+  //     }
+  //
+  //     display: flex;
+  //     justify-content: center;
+  //     flex-direction: row;
+  //   }
+  // }
 }
 
 .pf-box {
-  margin: 20px;
+  flex-basis: 100%;
+}
+
+
+@media all and (min-width: 600px) {
+  // .portfolio-page>div { flex-basis: calc(50% - 40px); }
+  .pf-box {
+    flex-basis: 50%;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  // .portfolio-page>div { flex-basis: calc(33% - 40px); }
+  .pf-box {
+    flex-basis: 33.33%;
+  }
+}
+
+.pf-box {
+  // margin: 20px;
   background-size: cover;
   background-position: center center;
+
+  h3 {
+    background: rgba(0,0,0,0.75);
+    padding: 4px 8px;
+    margin: 0;
+  }
+}
+
+.pfb-h1, .pfb-h2, .pfb-b1, .pfb-b2 {
+  flex: 1 100%;
+}
+
+.pf-box {
+  // flex-basis: calc(100% - 40px);
+
+  display: flex;
+  flex-flow: row wrap;
+  >* {
+    margin: 0;
+    // flex: 1 100%;
+    // background: rgba(0,0,0,0.75);
+  }
+  .pfb-b1, .pfb-b2 {
+    display: none;
+  }
+  .pfb-h2 {
+    display: none;
+  }
+}
+
+.pf-box:hover {
+  // @extend .db, .r;
+  .pfb-h1 {
+    // display: none;
+  }
+  .pfb-h2 {
+    // display: block;
+  }
+  .pfb-b1, .pfb-b2 {
+    // display: block;
+    // flex: 1 auto;
+  }
+
+
+  h3 {
+    // @extend .db, .b;
+    // visibility: hidden;
+  }
+
 }
 
 

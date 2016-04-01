@@ -3,7 +3,7 @@
 // == Debug ==
 //
 $debug: false;
-$debug: true;
+// $debug: true;
 
 // Borders
 @if $debug {
@@ -246,6 +246,8 @@ li.pull-right {
   padding: 70px;
 }
 
+
+// [To refactor]
 .portfolio-page {
   min-height: 100%;
   width: 100%;
@@ -307,9 +309,6 @@ li.pull-right {
   }
 }
 
-.pfb-h1, .pfb-h2, .pfb-b1, .pfb-b2 {
-  flex: 1 100%;
-}
 
 .pf-box {
   // flex-basis: calc(100% - 40px);
@@ -321,12 +320,12 @@ li.pull-right {
     // flex: 1 100%;
     // background: rgba(0,0,0,0.75);
   }
-  .pfb-b1, .pfb-b2 {
-    display: none;
-  }
-  .pfb-h2 {
-    display: none;
-  }
+  // .pfb-b1, .pfb-b2 {
+  //   display: none;
+  // }
+  // .pfb-h2 {
+  //   display: none;
+  // }
 }
 
 .pf-box:hover {
@@ -349,6 +348,98 @@ li.pull-right {
   }
 
 }
+// [/]
+
+// [old flexbox]
+.pf-fc {
+  min-height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  // align-content: stretch;
+}
+.pf-fi-out {
+
+  padding: 10px;
+
+  flex: 1 100%;
+  display: flex;
+
+  // height: 16.67%;
+
+}
+.pf-fi-in {
+  background-size: cover;
+  background-position: center center;
+
+  flex: 1;
+
+  display: flex;
+  flex-flow: row wrap;
+}
+@media all and (min-width: 600px) {
+  .pf-fi-out {
+    flex-basis: 50%;
+    // height: 66.33%;
+  }
+}
+@media all and (min-width: 1000px) {
+  .pf-fi-out {
+    flex-basis: 33.33%;
+    // height: 50%;
+  }
+}
+
+.pfb-h1 {
+  flex: 1 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3 {
+    margin: 0;
+  }
+}
+.pfb-h2 {
+  flex: 1 100%;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  h4 {
+    margin: 0;
+  }
+}
+
+.pfb-b1, .pfb-b2 {
+  flex: 1 100%;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pf-fi-in:hover {
+  .pfb-h1 {
+    display: none;
+  }
+  .pfb-h2 {
+    display: inherit;
+  }
+  .pfb-b1, .pfb-b2 {
+    display: inherit;
+    flex: 1 auto;
+  }
+}
+
+
+
+// [/]
+
+// [new flexbox]
+
+// [/]
+
+
 
 
 // == Contact Page ==

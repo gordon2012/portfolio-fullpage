@@ -15,6 +15,8 @@ TODO:
 - make scrolling text boxes for about page
 - make email form on contact page functional
 - add links to github from portfolio projects
+- propagate restructuring changes to portfolio
+- fix height issue on portfolio page
 
 DONE:
 - transfer from CodePen
@@ -48,3 +50,4 @@ DONE:
 - add travis deploy
 - add live reloading
 - begin restructuring portfolio flexbox
+- finish portfolio restructuring

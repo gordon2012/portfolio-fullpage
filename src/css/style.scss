@@ -3,12 +3,11 @@
 // == Debug ==
 //
 $debug: false;
-$debug: true;
+// $debug: true;
 
 // Borders
 @if $debug {
   .db {
-    // outline: 4px solid rgba(255,0,0,0.5);
     outline: 4px solid rgba(255,255,255,0.5);
     outline-offset: -4px;
   }
@@ -138,11 +137,6 @@ li.pull-right {
 .fi-0-1 {
   flex: 0 1 auto;
 }
-// .fi-4th {
-//   flex-grow: 0;
-//   flex-shrink: 1;
-//   flex-basis: 23%;
-// }
 .fi-sp10 {
   flex: 0 1 0%;
 }
@@ -154,17 +148,17 @@ li.pull-right {
 
 // == About Page ==
 //
-.flexbox-container {
-  display: flex;
-  flex-direction: row;
-
-  .flexbox-big {
-    flex: 4;
-  }
-  &.flexbox-small {
-    flex: 1;
-  }
-}
+// .flexbox-container {
+//   display: flex;
+//   flex-direction: row;
+//
+//   .flexbox-big {
+//     flex: 4;
+//   }
+//   &.flexbox-small {
+//     flex: 1;
+//   }
+// }
 .tbox {
   margin: 8px;
   padding: 8px;
@@ -174,31 +168,28 @@ li.pull-right {
 }
 
 // Scroll (old)
-.about-scroll {
-  // height: 100%;
-  overflow: hidden;
-}
-.about-scroll ul {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    // height: 100%;
+// .about-scroll {
+//   overflow: hidden;
+// }
+// .about-scroll ul {
+//     overflow: hidden;
+//     position: absolute;
+//     width: 100%;
+//
+//     transform:translateY(0%);
+//     animation: scroll-up 5s linear infinite;
+//
+// }
+// @keyframes scroll-up {
+//   0% {
+//     transform: translateY(100%);
+//   }
+//   100% {
+//     transform: translateY(-100%);
+//   }
+// }
 
-    // text-align: center;
-    transform:translateY(0%);
-    animation: scroll-up 5s linear infinite;
-
-}
-@keyframes scroll-up {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
-
-// New scroll
+// Skills
 .skills {
   ul {
     margin: 0;
@@ -207,10 +198,7 @@ li.pull-right {
       border: 1px solid white;
       margin: 2px;
       padding-left: 3px;
-      // display: block;
-      // list-style: none;
       flex: 1 1 auto;
-      // @extend .db;
     }
   }
 }
@@ -256,26 +244,6 @@ li.pull-right {
   flex-wrap: wrap;
   flex-direction: row;
 
-  // align-content: space-around;
-  // align-items: center;
-
-  // >div {
-  //   display: flex;
-  //   flex-basis: calc(100% - 40px);
-  //   justify-content: center;
-  //   flex-direction: column;
-  //   >div {
-  //
-  //     >span {
-  //       background: rgba(0,0,0,0.75);
-  //       padding: 4px 8px;
-  //     }
-  //
-  //     display: flex;
-  //     justify-content: center;
-  //     flex-direction: row;
-  //   }
-  // }
 }
 
 .pf-box {
@@ -284,21 +252,18 @@ li.pull-right {
 
 
 @media all and (min-width: 600px) {
-  // .portfolio-page>div { flex-basis: calc(50% - 40px); }
   .pf-box {
     flex-basis: 50%;
   }
 }
 
 @media all and (min-width: 1000px) {
-  // .portfolio-page>div { flex-basis: calc(33% - 40px); }
   .pf-box {
     flex-basis: 33.33%;
   }
 }
 
 .pf-box {
-  // margin: 20px;
   background-size: cover;
   background-position: center center;
 
@@ -311,51 +276,21 @@ li.pull-right {
 
 
 .pf-box {
-  // flex-basis: calc(100% - 40px);
 
   display: flex;
   flex-flow: row wrap;
   >* {
     margin: 0;
-    // flex: 1 100%;
-    // background: rgba(0,0,0,0.75);
   }
-  // .pfb-b1, .pfb-b2 {
-  //   display: none;
-  // }
-  // .pfb-h2 {
-  //   display: none;
-  // }
 }
 
-.pf-box:hover {
-  // @extend .db, .r;
-  .pfb-h1 {
-    // display: none;
-  }
-  .pfb-h2 {
-    // display: block;
-  }
-  .pfb-b1, .pfb-b2 {
-    // display: block;
-    // flex: 1 auto;
-  }
-
-
-  h3 {
-    // @extend .db, .b;
-    // visibility: hidden;
-  }
-
-}
 // [/]
 
-// [old flexbox]
+// [Updated flexbox]
 .pf-fc {
   min-height: 100%;
   display: flex;
   flex-flow: row wrap;
-  // align-content: stretch;
 }
 .pf-fi-out {
 
@@ -430,14 +365,8 @@ li.pull-right {
     flex: 1 auto;
   }
 }
-
-
-
 // [/]
 
-// [new flexbox]
-
-// [/]
 
 
 
@@ -486,17 +415,6 @@ input, textarea {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-}
-.fi-4th {
-  // flex-grow: 1;
-  // flex-shrink: 1;
-  // flex-basis: 20%;
-  // flex: 0 1 auto;
-  // margin: 4px;
-  // padding: 4px;
-  span {
-    // margin: 4px;
-  }
 }
 .ex {
   min-width: 100%;

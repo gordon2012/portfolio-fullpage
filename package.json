@@ -4,15 +4,18 @@
   "description": "A Basic Front End Web Development project for FreeCodeCamp",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:mdir && npm run build:html && npm run build:styles && npm run build:scripts",
+    "build": "npm run build:mdir && npm run build:html && npm run build:css && npm run build:js",
     "build:mdir": "mkdirp dist",
-    "build:html": "cp src/index.html ./dist",
-    "build:styles": "node-sass src/style.scss dist/style.css",
-    "build:scripts": "cp src/script.js ./dist",
+    "build:html": "cp src/html/index.html ./dist",
+    "build:css": "node-sass src/css/style.scss dist/style.css",
+    "build:js": "cp src/js/script.js ./dist",
     "watch": "watch \"npm run build\" src/",
+    "watch:html": "watch \"npm run build:html\" src/html/",
+    "watch:css": "watch \"npm run build:css\" src/css/",
+    "watch:js": "watch \"npm run build:js\" src/js/",
     "livereload": "live-reload --port 35729 dist/",
     "devserver": "node server",
-    "dev": "parallelshell \"npm run livereload\" \"npm run devserver\" \"npm run watch\""
+    "dev": "parallelshell \"npm run livereload\" \"npm run devserver\" \"npm run watch:html\" \"npm run watch:css\" \"npm run watch:js\""
   },
   "repository": {
     "type": "git",

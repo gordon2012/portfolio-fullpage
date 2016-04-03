@@ -17,6 +17,7 @@ TODO:
 - add links to github from portfolio projects
 - propagate restructuring changes to portfolio
 - fix height issue on portfolio page
+- refactor
 
 DONE:
 - transfer from CodePen
@@ -51,3 +52,4 @@ DONE:
 - add live reloading
 - begin restructuring portfolio flexbox
 - finish portfolio restructuring
+- separate watch tasks by extension

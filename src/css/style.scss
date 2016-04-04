@@ -286,6 +286,16 @@ li.pull-right {
 
 // [/]
 
+// "tbox"
+.pf-tbox {
+  // margin: 8px;
+  // padding: 8px;
+  border: 4px solid rgba(0,0,0,0.25);
+  border-radius: 8px;
+  background: rgba(0,0,0,0.5);
+}
+
+
 // [Updated flexbox]
 .pf-fc {
   min-height: 100%;
@@ -310,6 +320,9 @@ li.pull-right {
 
   display: flex;
   flex-flow: row wrap;
+
+  align-items: center;
+
 }
 @media all and (min-width: 600px) {
   .pf-fi-out {
@@ -367,6 +380,51 @@ li.pull-right {
 }
 // [/]
 
+// [portfolio box title and buttons]
+
+  .pfb-title {
+    flex: 1 100%;
+
+    display: flex;
+    justify-content: center;
+
+    span {
+      background: rgba(0,0,0,0.5);
+      padding: 0 0.5em;
+      font-size: 5vw;
+    }
+  }
+  @media all and (min-width: 600px) {
+    .pfb-title>span {
+      font-size: 2.7vw;
+    }
+  }
+  @media all and (min-width: 1000px) {
+    .pfb-title>span {
+      font-size: 2.2vw;
+    }
+  }
+
+
+
+
+  .pfb-btn {
+    flex: 1 50%;
+
+    display: flex;
+    justify-content: center;
+
+    visibility: hidden;
+   }
+
+  .pf-fi-in:hover {
+    .pfb-btn {
+      visibility: visible;
+    }
+  }
+
+
+// [/]
 
 
 

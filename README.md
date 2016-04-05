@@ -14,8 +14,6 @@ TODO:
 - change portfolio page to use reusable flexbox classes
 - make scrolling text boxes for about page
 - make email form on contact page functional
-- add links to github from portfolio projects
-- fix height issue on portfolio page
 - refactor
 - extract bootstrap styles for custom buttons
 - propagate restructuring changes to portfolio
@@ -54,4 +52,6 @@ DONE:
 - begin restructuring portfolio flexbox
 - finish portfolio restructuring
 - separate watch tasks by extension
+- refactor
+- fix portfolio boxes
 - refactor

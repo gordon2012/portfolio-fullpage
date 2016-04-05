@@ -161,12 +161,34 @@ li.pull-right {
   ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-flow: row wrap;
     li {
-      border: 1px solid white;
-      margin: 2px;
-      padding-left: 3px;
-      flex: 1 1 auto;
+      // border: 1px solid white;
+      // margin: 2px;
+      // padding-left: 3px;
+      // flex: 1 auto;
+
+      outline: 2px solid rgba(255,255,255,0.5);
+      outline-offset: -4px;
+      padding: 4px 4px 4px 8px;
+
+      flex: 1 1 50%;
+      font-size: 1.3em;
     }
+  }
+}
+@media all and (min-width: 600px) {
+  .skills>ul>li {
+    // font-size: 1.2em;
+    flex-basis: 33.33%;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .skills>ul>li {
+    // font-size: 1.4em;
+    flex-basis: 25%;
   }
 }
 

@@ -5,6 +5,7 @@
 $debug: false;
 // $debug: true;
 
+
 // Borders
 @if $debug {
   .db {
@@ -26,10 +27,10 @@ $debug: false;
 }
 
 
+
+
 // == Common ==
 //
-
-
 
 // Headers
 h1, h2, h3, h4 {
@@ -41,6 +42,7 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
+
 // Custom bootstrap
 .btn-custom {
   @include button-variant(white, #555, #555);
@@ -48,6 +50,7 @@ h1, h2, h3, h4 {
 li.active>a {
   @include button-variant(black, #fff, #000);
 }
+
 
 // Menu
 li {
@@ -75,6 +78,7 @@ li.pull-right {
   }
 }
 
+
 // Fullpage.js alignment
 .inner {
   margin: 100px 0px 0px 0px;
@@ -85,6 +89,7 @@ li.pull-right {
 .viewport {
   height: calc(100% - 50px);
 }
+
 
 // Background images
 .section
@@ -108,6 +113,7 @@ li.pull-right {
 {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/303256/snow-21979_1920.jpg);
 }
+
 
 // Reusable Flexbox classes
 .fc-row {
@@ -146,7 +152,12 @@ li.pull-right {
 }
 
 
+
+
 // == About Page ==
+//
+// TODO: use custom flexbox, use row wrap instead of columns? make alignments
+// not inline
 //
 .tbox {
   margin: 8px;
@@ -156,6 +167,7 @@ li.pull-right {
   background: rgba(0,0,0,0.5);
 }
 
+
 // Skills
 .skills {
   ul {
@@ -164,11 +176,6 @@ li.pull-right {
     display: flex;
     flex-flow: row wrap;
     li {
-      // border: 1px solid white;
-      // margin: 2px;
-      // padding-left: 3px;
-      // flex: 1 auto;
-
       outline: 2px solid rgba(255,255,255,0.5);
       outline-offset: -4px;
       padding: 4px 4px 4px 8px;
@@ -180,17 +187,16 @@ li.pull-right {
 }
 @media all and (min-width: 600px) {
   .skills>ul>li {
-    // font-size: 1.2em;
     flex-basis: 33.33%;
   }
 }
 
 @media all and (min-width: 1000px) {
   .skills>ul>li {
-    // font-size: 1.4em;
     flex-basis: 25%;
   }
 }
+
 
 // New tbox
 .ab-box {
@@ -203,8 +209,6 @@ li.pull-right {
     margin-right: 8px;
   }
 }
-
-
 
 
 
@@ -223,57 +227,6 @@ li.pull-right {
   padding: 70px;
 }
 
-
-// [To refactor]
-.portfolio-page {
-  min-height: 100%;
-  width: 100%;
-
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-
-}
-
-.pf-box {
-  flex-basis: 100%;
-}
-
-
-@media all and (min-width: 600px) {
-  .pf-box {
-    flex-basis: 50%;
-  }
-}
-
-@media all and (min-width: 1000px) {
-  .pf-box {
-    flex-basis: 33.33%;
-  }
-}
-
-.pf-box {
-  background-size: cover;
-  background-position: center center;
-
-  h3 {
-    background: rgba(0,0,0,0.75);
-    padding: 4px 8px;
-    margin: 0;
-  }
-}
-
-
-.pf-box {
-
-  display: flex;
-  flex-flow: row wrap;
-  >* {
-    margin: 0;
-  }
-}
-
-// [/]
 
 // "tbox"
 .pf-tbox {
@@ -367,50 +320,45 @@ li.pull-right {
 }
 // [/]
 
+
 // [portfolio box title and buttons]
+.pfb-title {
+  flex: 1 100%;
 
-  .pfb-title {
-    flex: 1 100%;
+  display: flex;
+  justify-content: center;
 
-    display: flex;
-    justify-content: center;
-
-    span {
-      background: rgba(0,0,0,0.5);
-      padding: 0 0.5em;
-      font-size: 5vw;
-    }
+  span {
+    background: rgba(0,0,0,0.5);
+    padding: 0 0.5em;
+    font-size: 5vw;
   }
-  @media all and (min-width: 600px) {
-    .pfb-title>span {
-      font-size: 2.7vw;
-    }
+}
+@media all and (min-width: 600px) {
+  .pfb-title>span {
+    font-size: 2.7vw;
   }
-  @media all and (min-width: 1000px) {
-    .pfb-title>span {
-      font-size: 2.2vw;
-    }
+}
+@media all and (min-width: 1000px) {
+  .pfb-title>span {
+    font-size: 2.2vw;
   }
+}
 
+.pfb-btn {
+  flex: 1 50%;
 
+  display: flex;
+  justify-content: center;
 
+  visibility: hidden;
+ }
 
+.pf-fi-in:hover {
   .pfb-btn {
-    flex: 1 50%;
-
-    display: flex;
-    justify-content: center;
-
-    visibility: hidden;
-   }
-
-  .pf-fi-in:hover {
-    .pfb-btn {
-      visibility: visible;
-    }
+    visibility: visible;
   }
-
-
+}
 // [/]
 
 
@@ -422,6 +370,7 @@ li.pull-right {
 .dinotalk:before{content:"\f099"}
 .chainedin:before{content:"\f0e1"}
 .visagelivre:before{content:"\f09a"}
+
 
 // Form
 input, textarea {
@@ -444,7 +393,6 @@ input, textarea {
   padding-bottom: 10px;
   margin: 0;
 }
-
 
 .con-fi {
   flex: 0 0 auto;
@@ -473,8 +421,6 @@ input, textarea {
   background: #333;
   justify-content: center;
 }
-
-
 
 
 

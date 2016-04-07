@@ -56,3 +56,4 @@ DONE:
 - fix portfolio boxes
 - refactor
 - make skills section easier on the eyes
+- refactor

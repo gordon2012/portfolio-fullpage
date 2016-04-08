@@ -57,3 +57,4 @@ DONE:
 - refactor
 - make skills section easier on the eyes
 - refactor
+- add to skills

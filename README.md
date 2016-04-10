@@ -58,3 +58,4 @@ DONE:
 - make skills section easier on the eyes
 - refactor
 - add to skills
+- begin redesign of about page

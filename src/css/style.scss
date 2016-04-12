@@ -166,28 +166,42 @@ li.pull-right {
 
   >h1 {
     // flex: 1 1;
+    flex: 0 1 auto;
   }
 
   >div {
-    flex: 1 auto;
+    flex: 0 1 auto;
 
     display: flex;
     flex-flow: row wrap;
 
-    align-self: center;
+
     width: 100%; // MEDIA
 
     .ab-header {
-      flex: 1 100%;
+      // flex: 0 1 100%;
+      // background-color: blue;
+      flex: 0 1 100%;
+
+      display: flex;
+      flex-flow: row nowrap;
+
+      div {
+        flex: 1;
+        align-self: center;
+      }
+      div:first-child {
+        flex: 0 1;
+      }
 
     }
 
     .ab-cskill {
-      flex: 1 100%;
+      flex: 1 60%;
     }
 
     .ab-pskill {
-      flex: 1 100%;
+      flex: 1 40%;
     }
 
   }

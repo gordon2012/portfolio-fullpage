@@ -60,3 +60,4 @@ DONE:
 - add to skills
 - begin redesign of about page
 - continue redesign of about page
+- fix about page

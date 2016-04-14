@@ -62,3 +62,4 @@ DONE:
 - continue redesign of about page
 - fix about page
 - continue to fix about page
+- tweak about page styles

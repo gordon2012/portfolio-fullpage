@@ -3,7 +3,7 @@
 // == Debug ==
 //
 $debug: false;
-// $debug: true;
+$debug: true;
 
 
 // Borders
@@ -169,7 +169,7 @@ li.pull-right {
 .ab-title {
   flex: 0 1 auto;
 
-  font-size: 1.5em;  // MEDIA
+  font-size: 1.7em;  // MEDIA
   padding: 8px;  // media?
   margin: 0;
 }
@@ -181,7 +181,12 @@ li.pull-right {
     width: 32px;
     float: left;
     height: auto;
+
+    margin-right: 8px;
   }
+
+  background: rgba(0,0,0,0.5);
+  padding: 8px;
 
 }
 
@@ -194,6 +199,38 @@ li.pull-right {
   div>h4 {
     font-size: 1.2em;
   }
+
+
+  div>div {
+
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-flow: row wrap;
+      li {
+        // outline: 2px solid rgba(255,255,255,0.5);
+        // outline-offset: -4px;
+        // border: 2px solid rgba(255,255,255,0.5);
+        // padding: 4px 4px 4px 8px;
+        padding: 1px;
+
+        div {
+        // margin: 4px;
+          padding: 0 0 0 4px;
+          border: 2px solid rgba(255,255,255,0.75);
+          background: rgba(0,0,0,0.5);
+        }
+
+        flex: 1 1 50%; // MEDIA
+        font-size: 1em; // MEDIA
+      }
+    }
+  }
+
+
+
 
 }
 
@@ -266,22 +303,22 @@ li.pull-right {
 
 
 // Skills
-.skills {
-  ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-    li {
-      outline: 2px solid rgba(255,255,255,0.5);
-      outline-offset: -4px;
-      padding: 4px 4px 4px 8px;
-
-      flex: 1 1 50%;
-      font-size: 1em;
-    }
-  }
-}
+// .skills {
+//   ul {
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     flex-flow: row wrap;
+//     li {
+//       outline: 2px solid rgba(255,255,255,0.5);
+//       outline-offset: -4px;
+//       padding: 4px 4px 4px 8px;
+//
+//       flex: 1 1 50%; // MEDIA
+//       font-size: 1em; // MEDIA
+//     }
+//   }
+// }
 @media all and (min-width: 600px) {
   .skills>ul>li {
     flex-basis: 33.33%;

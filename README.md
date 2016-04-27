@@ -63,3 +63,4 @@ DONE:
 - fix about page
 - continue to fix about page
 - tweak about page styles
+- rename repo and fix build script

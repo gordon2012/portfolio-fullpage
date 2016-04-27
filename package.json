@@ -1,14 +1,14 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-fullpage",
   "version": "0.1.0",
   "description": "A Basic Front End Web Development project for FreeCodeCamp",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:mdir && npm run build:html && npm run build:css && npm run build:js",
+    "build": "npm run build:html && npm run build:css && npm run build:js",
     "build:mdir": "mkdirp dist",
-    "build:html": "cp src/html/index.html ./dist",
-    "build:css": "node-sass src/css/style.scss dist/style.css",
-    "build:js": "cp src/js/script.js ./dist",
+    "build:html": "npm run build:mdir && cp src/html/index.html ./dist",
+    "build:css": "npm run build:mdir && node-sass src/css/style.scss dist/style.css",
+    "build:js": "npm run build:mdir && cp src/js/script.js ./dist",
     "watch": "watch \"npm run build\" src/",
     "watch:html": "watch \"npm run build:html\" src/html/",
     "watch:css": "watch \"npm run build:css\" src/css/",
@@ -19,15 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gordon2012/portfolio.git"
+    "url": "git+https://github.com/gordon2012/portfolio-fullpage.git"
   },
   "keywords": [],
   "author": "Gordon Doskas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gordon2012/portfolio/issues"
+    "url": "https://github.com/gordon2012/portfolio-fullpage/issues"
   },
-  "homepage": "https://github.com/gordon2012/portfolio#readme",
+  "homepage": "https://github.com/gordon2012/portfolio-fullpage#readme",
   "devDependencies": {
     "connect-livereload": "^0.5.4",
     "express": "^4.13.4",
